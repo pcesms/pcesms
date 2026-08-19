@@ -1253,3 +1253,33 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 1050px) {
+
+    .sidebar-close {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 32px;
+        height: 32px;
+
+        margin-left: auto;
+
+        border: 0;
+
+        background: transparent;
+
+        color: var(--color-text-muted);
+
+        font-size: 24px;
+
+        line-height: 1;
+    }
+
+    .sidebar-close:hover {
+        color: var(--color-text);
+    }
+
+}
