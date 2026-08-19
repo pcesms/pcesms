@@ -2,13 +2,217 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCESMS</title>
-</head>
-<body>
 
-    <h1>PCESMS</h1>
-    <p>La liga española ESMS está llegando...</p>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="PCESMS - Liga Española">
+
+    <title>PCESMS · Liga Española</title>
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- CSS específico del login -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login-page">
+
+    <main class="login-container">
+
+        <!-- ==========================================
+             PANEL DE PRESENTACIÓN
+             ========================================== -->
+        <section class="login-brand">
+
+            <div class="brand-content">
+
+                <div class="brand-logo">
+                    PCESMS
+                </div>
+
+                <div class="brand-divider"></div>
+
+                <h1>Liga Española</h1>
+
+                <p>
+                    Gestiona tu equipo.
+                    Compite. Decide.
+                    Haz historia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             PANEL DE LOGIN
+             ========================================== -->
+        <section class="login-panel">
+
+            <div class="login-box">
+
+                <header class="login-header">
+
+                    <span class="login-kicker">
+                        ÁREA DE MANAGER
+                    </span>
+
+                    <h2>Iniciar sesión</h2>
+
+                    <p>
+                        Accede a tu equipo y continúa
+                        con tu temporada.
+                    </p>
+
+                </header>
+
+
+                <!-- Mensaje de error -->
+                <div
+                    id="login-error"
+                    class="login-message login-message-error"
+                    role="alert"
+                    aria-live="polite"
+                    hidden>
+                </div>
+
+
+                <!-- Formulario -->
+                <form id="login-form" novalidate>
+
+                    <!-- Usuario -->
+                    <div class="form-group">
+
+                        <label for="username">
+                            Usuario
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            autocomplete="username"
+                            placeholder="Introduce tu usuario"
+                            required>
+
+                    </div>
+
+
+                    <!-- Contraseña -->
+                    <div class="form-group">
+
+                        <div class="form-label-row">
+
+                            <label for="password">
+                                Contraseña
+                            </label>
+
+                            <a
+                                href="#"
+                                class="forgot-password">
+                                ¿Has olvidado tu contraseña?
+                            </a>
+
+                        </div>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                autocomplete="current-password"
+                                placeholder="Introduce tu contraseña"
+                                required>
+
+                            <button
+                                type="button"
+                                id="toggle-password"
+                                class="password-toggle"
+                                aria-label="Mostrar contraseña"
+                                aria-pressed="false">
+
+                                <span
+                                    id="password-toggle-icon">
+                                    Mostrar
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Recordar sesión -->
+                    <div class="remember-row">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                                name="remember">
+
+                            <span>
+                                Recordarme
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Botón -->
+                    <button
+                        type="submit"
+                        id="login-button"
+                        class="login-button">
+
+                        <span id="login-button-text">
+                            Entrar
+                        </span>
+
+                        <span
+                            id="login-spinner"
+                            class="login-spinner"
+                            hidden>
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- Pie -->
+                <footer class="login-footer">
+
+                    <span>
+                        PCESMS
+                    </span>
+
+                    <span class="footer-separator">
+                        ·
+                    </span>
+
+                    <span>
+                        Liga Española
+                    </span>
+
+                </footer>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/global.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 </html>
