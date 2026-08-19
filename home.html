@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="PCESMS - Panel de manager">
+
+    <title>PCESMS · Panel de Manager</title>
+
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- ======================================================
+     APP
+     ====================================================== -->
+
+<div class="app">
+
+
+    <!-- ==================================================
+         SIDEBAR
+         ================================================== -->
+
+    <aside class="sidebar"
+           id="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="sidebar-header">
+
+            <a href="home.html"
+               class="sidebar-logo">
+
+                PCESMS
+
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebar-close"
+                aria-label="Cerrar menú">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <!-- EQUIPO -->
+
+        <div class="sidebar-team">
+
+            <div class="sidebar-team-logo">
+
+                RM
+
+            </div>
+
+            <div>
+
+                <strong>
+                    Real Madrid
+                </strong>
+
+                <span>
+                    Manager
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    GENERAL
+                </span>
+
+
+                <a href="home.html"
+                   class="nav-item active">
+
+                    <span class="nav-icon">
+                        🏠
+                    </span>
+
+                    <span>
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <a href="league.html"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        📊
+                    </span>
+
+                    <span>
+                        Clasificación
+                    </span>
+
+                </a>
+
+
+                <a href="calendar.html"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        📅
+                    </span>
+
+                    <span>
+                        Calendario
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MI EQUIPO
+                </span>
+
+
+                <a href="team.html"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        ⚽
+                    </span>
+
+                    <span>
+                        Mi equipo
+                    </span>
+
+                </a>
+
+
+                <a href="players.html"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        👥
+                    </span>
+
+                    <span>
+                        Plantilla
+                    </span>
+
+                </a>
+
+
+                <a href="#"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        📝
+                    </span>
+
+                    <span>
+                        Alineación
+                    </span>
+
+                    <span class="nav-badge">
+                        !
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    GESTIÓN
+                </span>
+
+
+                <a href="market.html"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        💰
+                    </span>
+
+                    <span>
+                        Mercado
+                    </span>
+
+                </a>
+
+
+                <a href="#"
+                   class="nav-item">
+
+                    <span class="nav-icon">
+                        💳
+                    </span>
+
+                    <span>
+                        Finanzas
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- FOOTER SIDEBAR -->
+
+        <div class="sidebar-footer">
+
+            <a href="#"
+               class="sidebar-footer-item">
+
+                ⚙️
+                <span>
+                    Configuración
+                </span>
+
+            </a>
+
+
+            <a href="index.html"
+               class="sidebar-footer-item logout">
+
+                ↪
+                <span>
+                    Cerrar sesión
+                </span>
+
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- ==================================================
+         MAIN
+         ================================================== -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Abrir menú">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-title">
+
+                <span>
+                    PANEL DE MANAGER
+                </span>
+
+                <h1>
+                    Inicio
+                </h1>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+
+                <button
+                    class="topbar-button notification-button"
+                    aria-label="Notificaciones">
+
+                    🔔
+
+                    <span class="notification-dot">
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="profile-button">
+
+                    <span class="profile-avatar">
+                        RM
+                    </span>
+
+                    <span class="profile-name">
+                        Manager
+                    </span>
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+
+            <!-- ==========================================
+                 WELCOME
+                 ========================================== -->
+
+            <section class="welcome-section">
+
+                <div>
+
+                    <span class="welcome-kicker">
+                        MI EQUIPO
+                    </span>
+
+                    <h2>
+                        Real Madrid
+                    </h2>
+
+                    <p>
+                        Bienvenido de nuevo, Manager.
+                    </p>
+
+                </div>
+
+
+                <div class="season-badge">
+
+                    TEMPORADA
+
+                    <strong>
+                        2026/27
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==========================================
+                 TEAM OVERVIEW
+                 ========================================== -->
+
+            <section class="team-overview">
+
+
+                <div class="team-identity">
+
+
+                    <div class="large-team-logo">
+                        RM
+                    </div>
+
+
+                    <div class="team-name">
+
+                        <span>
+                            REAL MADRID
+                        </span>
+
+                        <strong>
+                            1º
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="team-stats">
+
+
+                    <div class="team-stat">
+
+                        <span>
+                            PJ
+                        </span>
+
+                        <strong>
+                            10
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-stat">
+
+                        <span>
+                            PG
+                        </span>
+
+                        <strong>
+                            8
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-stat">
+
+                        <span>
+                            PE
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-stat">
+
+                        <span>
+                            PP
+                        </span>
+
+                        <strong>
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-stat highlight">
+
+                        <span>
+                            PTS
+                        </span>
+
+                        <strong>
+                            26
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- ==========================================
+                 GRID
+                 ========================================== -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- ======================================
+                     NEXT MATCH
+                     ====================================== -->
+
+                <section class="dashboard-card next-match-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-kicker">
+                                PRÓXIMO PARTIDO
+                            </span>
+
+                            <h3>
+                                Jornada 11
+                            </h3>
+
+                        </div>
+
+                        <span class="match-date">
+                            DOM · 20:00
+                        </span>
+
+                    </div>
+
+
+                    <div class="match-teams">
+
+
+                        <div class="match-team">
+
+                            <div class="match-team-logo">
+                                RM
+                            </div>
+
+                            <strong>
+                                Real Madrid
+                            </strong>
+
+                            <span>
+                                Local
+                            </span>
+
+                        </div>
+
+
+                        <div class="match-vs">
+
+                            <span>
+                                VS
+                            </span>
+
+                        </div>
+
+
+                        <div class="match-team">
+
+                            <div class="match-team-logo opponent">
+                                SEV
+                            </div>
+
+                            <strong>
+                                Sevilla
+                            </strong>
+
+                            <span>
+                                Visitante
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="lineup-warning">
+
+                        <span class="warning-icon">
+                            !
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Alineación pendiente
+                            </strong>
+
+                            <span>
+                                Debes enviar tu alineación
+                                antes del partido.
+                            </span>
+
+                        </div>
+
+                        <a href="#"
+                           class="warning-action">
+
+                            Preparar
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ======================================
+                     FORM
+                     ====================================== -->
+
+                <section class="dashboard-card form-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-kicker">
+                                FORMA
+                            </span>
+
+                            <h3>
+                                Últimos partidos
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-list">
+
+
+                        <div class="form-match">
+
+                            <div class="form-opponent">
+                                Sevilla
+                            </div>
+
+                            <span class="form-result win">
+                                V
+                            </span>
+
+                            <strong>
+                                3 - 1
+                            </strong>
+
+                        </div>
+
+
+                        <div class="form-match">
+
+                            <div class="form-opponent">
+                                Valencia
+                            </div>
+
+                            <span class="form-result win">
+                                V
+                            </span>
+
+                            <strong>
+                                0 - 2
+                            </strong>
+
+                        </div>
+
+
+                        <div class="form-match">
+
+                            <div class="form-opponent">
+                                Athletic
+                            </div>
+
+                            <span class="form-result draw">
+                                E
+                            </span>
+
+                            <strong>
+                                1 - 1
+                            </strong>
+
+                        </div>
+
+
+                        <div class="form-match">
+
+                            <div class="form-opponent">
+                                Villarreal
+                            </div>
+
+                            <span class="form-result win">
+                                V
+                            </span>
+
+                            <strong>
+                                2 - 0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ======================================
+                     TABLE
+                     ====================================== -->
+
+                <section class="dashboard-card table-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-kicker">
+                                LA LIGA
+                            </span>
+
+                            <h3>
+                                Clasificación
+                            </h3>
+
+                        </div>
+
+
+                        <a href="league.html"
+                           class="card-link">
+
+                            Ver completa →
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="mini-table">
+
+
+                        <div class="table-row table-header">
+
+                            <span>
+                                #
+                            </span>
+
+                            <span>
+                                EQUIPO
+                            </span>
+
+                            <span>
+                                PJ
+                            </span>
+
+                            <span>
+                                PTS
+                            </span>
+
+                        </div>
+
+
+                        <div class="table-row highlighted">
+
+                            <span>
+                                1
+                            </span>
+
+                            <span>
+                                Real Madrid
+                            </span>
+
+                            <span>
+                                10
+                            </span>
+
+                            <strong>
+                                26
+                            </strong>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                2
+                            </span>
+
+                            <span>
+                                Barcelona
+                            </span>
+
+                            <span>
+                                10
+                            </span>
+
+                            <strong>
+                                24
+                            </strong>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                3
+                            </span>
+
+                            <span>
+                                Atlético
+                            </span>
+
+                            <span>
+                                10
+                            </span>
+
+                            <strong>
+                                22
+                            </strong>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                4
+                            </span>
+
+                            <span>
+                                Athletic
+                            </span>
+
+                            <span>
+                                10
+                            </span>
+
+                            <strong>
+                                19
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ======================================
+                     FINANCES
+                     ====================================== -->
+
+                <section class="dashboard-card finances-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-kicker">
+                                ECONOMÍA
+                            </span>
+
+                            <h3>
+                                Finanzas
+                            </h3>
+
+                        </div>
+
+                        <a href="#"
+                           class="card-link">
+
+                            Ver →
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="balance">
+
+                        <span>
+                            BALANCE ACTUAL
+                        </span>
+
+                        <strong>
+                            125.450.000 €
+                        </strong>
+
+                    </div>
+
+
+                    <div class="finance-summary">
+
+
+                        <div>
+
+                            <span>
+                                Presupuesto
+                            </span>
+
+                            <strong>
+                                125,4 M€
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Salarios
+                            </span>
+
+                            <strong>
+                                42,3 M€
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+<!-- OVERLAY MOBILE -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebar-overlay">
+</div>
+
+
+<script src="js/global.js"></script>
+
+</body>
+
+</html>
